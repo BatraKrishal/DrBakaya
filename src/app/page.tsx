@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import ServiceCard from "@/components/ServiceCard";
 import DoctorCard from "@/components/DoctorCard";
+import LocationCard from "@/components/LocationCard";
 
 export default function Home() {
   return (
@@ -128,35 +129,32 @@ export default function Home() {
           </div>
           
           <div className={styles.locationsGrid}>
-            <div className={styles.locationCard}>
-              <div className={styles.locationTime}>Morning</div>
-              <h3>Jogiwala Clinic</h3>
-              <p className={styles.locationAddress}>1st Floor, Above Union Bank of India, Haridwar Road</p>
-              <div className={styles.locationHours}>
-                <span>10:30 AM - 1:30 PM</span>
-                <span>(Mon - Sat)</span>
-              </div>
-            </div>
+            <LocationCard
+              time="Morning"
+              name="Jogiwala Clinic"
+              address="2nd Lane, Badripur Road Jogiwala, Dehradun, Uttarakhand 248001"
+              hours="10:30 AM - 1:30 PM"
+              days="(Mon - Sat)"
+              mapQuery="Dr Bakaya Jogiwala Clinic 2nd Lane, Badripur Road, Dehradun"
+            />
             
-            <div className={styles.locationCard}>
-              <div className={styles.locationTime}>Afternoon</div>
-              <h3>Tagore Villa Clinic</h3>
-              <p className={styles.locationAddress}>Near Doon Hospital, Chuckku Wala</p>
-              <div className={styles.locationHours}>
-                <span>2:30 PM - 5:00 PM</span>
-                <span>(Mon - Sat)</span>
-              </div>
-            </div>
+            <LocationCard
+              time="Afternoon"
+              name="Tagore Villa Clinic"
+              address="Near Levi's Store, 74, Chakarata Road, Tagore Villa, Dehradun, Uttarakhand 248001"
+              hours="2:30 PM - 5:00 PM"
+              days="(Mon - Sat)"
+              mapQuery="Dr. Bakaya Skin And Aesthetic Centre, Tagore Villa, Dehradun"
+            />
             
-            <div className={styles.locationCard}>
-              <div className={styles.locationTime}>Evening</div>
-              <h3>Nehru Colony Clinic</h3>
-              <p className={styles.locationAddress}>A - Block, Near LIC Building</p>
-              <div className={styles.locationHours}>
-                <span>5:30 PM - 7:30 PM</span>
-                <span>(Mon - Sat)</span>
-              </div>
-            </div>
+            <LocationCard
+              time="Evening"
+              name="Nehru Colony Clinic"
+              address="Navjyoti Eye Hospital Near LIC Building, Nehru Colony, Haridwar Road, Dehradun, Uttarakhand 248001"
+              hours="5:30 PM - 7:30 PM"
+              days="(Mon - Sat)"
+              mapQuery="Navjyoti Eye Hospital, Nehru Colony, Dehradun"
+            />
           </div>
         </div>
       </section>
