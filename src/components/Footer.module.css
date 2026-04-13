@@ -1,0 +1,67 @@
+.footer {
+  background-color: var(--primary-black);
+  color: var(--bg-white);
+  padding-top: 5rem;
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: 4rem;
+}
+
+.footerTitle {
+  color: var(--accent-gold);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.footerText {
+  color: #cccccc;
+  margin-bottom: 2rem;
+  max-width: 400px;
+}
+
+.contactInfo p {
+  margin-bottom: 0.5rem;
+  color: #eeeeee;
+}
+
+.contactInfo strong {
+  color: var(--accent-gold);
+}
+
+.locationsList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.locationsList li {
+  color: #cccccc;
+  line-height: 1.5;
+  padding-left: 1rem;
+  border-left: 3px solid var(--accent-gold);
+}
+
+.locationsList strong {
+  color: var(--bg-white);
+  font-size: 1.1rem;
+}
+
+.copyright {
+  background-color: var(--secondary-black);
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888888;
+}
+
+@media (max-width: 768px) {
+  .footerGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
