@@ -21,17 +21,17 @@ export default function Footer() {
           <ul className={styles.locationsList}>
             <li>
               <strong>Jogiwala (Morning)</strong><br />
-              1st Floor, Above Union Bank of India, Haridwar Road<br />
+              2nd Lane, Badripur Road Jogiwala, Dehradun<br />
               10:30 AM - 1:30 PM (Mon-Sat)
             </li>
             <li>
               <strong>Tagore Villa (Afternoon)</strong><br />
-              Near Doon Hospital, Chuckku Wala<br />
+              Near Levi's Store, 74, Chakarata Road, Tagore Villa, Dehradun<br />
               2:30 PM - 5:00 PM (Mon-Sat)
             </li>
             <li>
               <strong>Nehru Colony (Evening)</strong><br />
-              A - Block, Near LIC Building<br />
+              Navjyoti Eye Hospital, Near LIC Building, Nehru Colony, Dehradun<br />
               5:30 PM - 7:30 PM (Mon-Sat)
             </li>
           </ul>

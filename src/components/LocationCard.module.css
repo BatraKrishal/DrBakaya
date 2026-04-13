@@ -2,7 +2,7 @@
   background-color: transparent;
   perspective: 1000px;
   cursor: pointer;
-  min-height: 280px;
+  min-height: 380px;
   border-radius: 8px;
 }
 
@@ -48,15 +48,18 @@
 
 .locationTime {
   position: absolute;
-  top: 1rem;
-  right: -2rem;
+  top: 1.5rem;
+  right: -2.5rem;
   background: var(--primary-black);
   color: var(--accent-gold);
-  padding: 0.25rem 3rem;
+  padding: 0.25rem 0;
+  width: 140px;
+  text-align: center;
   font-size: 0.8rem;
   font-weight: 600;
   transform: rotate(45deg);
   text-transform: uppercase;
+  z-index: 2;
 }
 
 .cardFront h3 {
